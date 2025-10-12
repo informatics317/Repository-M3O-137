@@ -94,37 +94,42 @@
 '''7'''
 from collections import*
 text0 = """
-    Python is a powerful programming language. 
+    Python is a powerful programming language.
     It is used in data science, web development, automation, and many other fields!
     PYTHON is easy to learn, yet very versatile.
 """
-text0 = text0.strip()
-print(text0)
-text0 = text0.lower()
-print(text0)
-text0 = text0.replace('!', '.')
+text0 = text0.strip().lower()
+print('1)', text0)
+text = text0 = text0.replace('!', '.').replace('\n', '').replace('  ', '')
+print('2)', text0)
 text0 = text0.split('.')
+text0 = [a for a in text0 if a!= '']
 text1 = text0[0]
+print('1-ое предложение:', text1)
 text1 = text1.split()
-print(text1.count('python'))
+print('5)', text1)
+print('6)', text1.count('python'))
 text2 = ' '.join(text1)
-print(text2.startswith("python"))
-print(text2.endswith("language"))
-print(len(text2), text2.count('a'), text2.find('data'))
-text3 = '-'.join(text1)
-print(Counter(text1))
+print('7)', 'startswith:', text2.startswith("python"), 'endswith:', text2.endswith("language"))
+
+print('8)', len(str(text0)), str(text0).count('a'), str(text0).find('data'))
+text3 = text.split()
+text3 = '-'.join(text3)
+print('9)', text3)
+print('10)', Counter(text.split()))
 text = """
-    Python is a powerful programming language. 
+    Python is a powerful programming language.
     It is used in data science, web development, automation, and many other fields!
     PYTHON is easy to learn, yet very versatile.
 """
 import string
 def clean_text(text):
+    text = text.strip()
     text = text.lower()
     text = text.translate(str.maketrans('', '', string.punctuation))
     text = text.replace(' ', '')
     return text
-print(clean_text(text))
+print('11)', clean_text(text))
 
 
 
