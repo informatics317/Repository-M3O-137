@@ -19,6 +19,9 @@ while boss.is_alive == 1:
     if king.is_alive == 1:
         king.attack_Excalibur(boss)
     if mag.is_alive == 1:
+        if mag.mp >= 20 and (king.hp < 70 or knight.hp < 70):
+            mag.heal(king)
+            mag.heal(knight)
         mag.attack_fire(boss)
     if knight.is_alive == 1:
         knight.attack_spear(boss)
