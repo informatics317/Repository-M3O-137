@@ -1,0 +1,22 @@
+2025-10-21 19:12:02,723 - INFO - 1 The beginning of bubble sorting
+2025-10-21 19:12:04,610 - DEBUG - Passage 4919
+2025-10-21 19:12:04,610 - DEBUG - Number of swap 6215875
+2025-10-21 19:12:04,610 - INFO - 1 The end of bubble sorting
+2025-10-21 19:12:04,615 - INFO - 2 The beginning of sorting by selection
+2025-10-21 19:12:05,047 - DEBUG - Passage 5001
+2025-10-21 19:12:05,047 - DEBUG - Number of swap 30992
+2025-10-21 19:12:05,047 - INFO - 2 End of selection sorting
+2025-10-21 19:12:05,056 - INFO - 3 The beginning of sorting by inserts
+2025-10-21 19:12:05,572 - DEBUG - Passage 5000
+2025-10-21 19:12:05,572 - DEBUG - Number of swap 6254370
+2025-10-21 19:12:05,572 - INFO - 3 End of insertion sorting
+2025-10-21 19:12:05,582 - INFO - 4 The beginning of pyramid sorting
+2025-10-21 19:12:05,601 - INFO - 4 The end of pyramid sorting
+2025-10-21 19:12:05,613 - INFO - 5 Start of merge sorting
+2025-10-21 19:12:05,621 - INFO - 5 End of merge sorting
+2025-10-21 19:12:05,657 - INFO - 6 The beginning of quick sorting
+2025-10-21 19:12:05,666 - INFO - 6 End of quick sorting
+2025-10-21 19:12:05,681 - INFO - 7.1 The beginning of the function sort()
+2025-10-21 19:12:05,682 - INFO - 7.1 End of function sort()
+2025-10-21 19:12:05,693 - INFO - 7.2 The beginning of the function sorted()
+2025-10-21 19:12:05,694 - INFO - 7.2 End of function sorted()
