@@ -10,10 +10,7 @@ print('Ваш противник:')
 print(boss.__dict__)
 
 n = 0
-while boss.is_alive == 1:
-    if king == 0 and mag == 0 and knight == 0:
-        print('Увы. Вы проиграли')
-        break
+while boss.is_alive == 1 and (king.is_alive == 1 or mag.is_alive == 1 or knight.is_alive == 1):
     n += 1
     print(f'Раунд {n}')
     if king.is_alive == 1:
@@ -25,13 +22,12 @@ while boss.is_alive == 1:
         mag.attack_fire(boss)
     if knight.is_alive == 1:
         knight.attack_spear(boss)
+    
     if boss.is_alive == 1:
         boss_attack()
-    if boss.is_alive == 0:
-        break
-print('Мордред мертв')
-print('Победа!!!')
 
-
-
-
+if boss.is_alive == 0:
+    print('Мордред мертв')
+    print('Победа!!!')
+else:
+    print('Увы. Вы проиграли')
